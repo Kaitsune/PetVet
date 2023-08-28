@@ -1,0 +1,11 @@
+
+#submitForm label{
+    color: black;
+}
+#submitForm ::placeholder{
+    color: black;
+}
+#mesa{
+    background-image: url(/img/paw.png);
+    background-size: 100px;
+}

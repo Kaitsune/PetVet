@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="nav-wrapper amber darken-4">
+            <a href="#" class="brand-logo">VetPet</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="submit.html">SUBMIT A REPORT</a></li>
+                <li><a href="data.html">DATA TABLE</a></li>
+            </ul>
+        </div>
+    </nav>
+    </body>
+    <br/>
+    <!--Submit-->
+    <h3 class="center">Submit a Report</h3>
+    <br/>
+    <br/>
+    <div id="submitForm" class="container">
+        <div id="sumbitArea" class="row  grey lighten-1">
+            <h4 class="center  grey darken-2" style="height: 45px;">Fill up the Form</h4>
+            <form class="col s12">
+                <!--Owner AREA-->
+                <div id="ownerInput" class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Owner Name" id="owner_name" type="text" class="validate">
+                        <label for="owner_name">Owner Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input placeholder="Telephone/Cellphone Number" id="owner_num" type="number" minlength="7" data-length="11"
+                            class="validate">
+                        <label for="owner_num">Contact Number</label>
+                        <span class="helper-text" data-error="required! (max 11-digits)" data-success="accepted">(maximum of 11-digits)</span>
+                    </div>
+
+
+                </div>
+
+                <!--Pet Area-->
+                <div id="petInput" class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Pet Name" id="pet_name" type="text" class="validate">
+                        <label for="pet_name">Pet Name</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input id="pet_age" type="number" class="validate">
+                        <label for="pet_age">Pet Age</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <input id="pet_gender" type="text" class="validate">
+                        <label for="pet_gender">Pet Gender</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Type of Species" id="pet_species" type="text" class="validate">
+                        <label for="pet_species">Species</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Type of Breed" id="pet_breed" type="text" class="validate">
+                        <label for="pet_breed">Breed</label>
+                    </div>
+                </div>
+
+                <!--Owner Concern Area(Text input)-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">local_hospital</i>
+                      <textarea id="owner_concern" class="materialize-textarea"></textarea>
+                      <label for="owner_concern">Concern</label>
+                    </div>
+                    <!--Submit Button-->
+                    <button class="btn waves-effect waves-light right" type="submit" name="action" style="right: 2%;">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                  </div>
+                
+                  
+
+            </form>
+        </div>
+    </div>
+
+
+   
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+
+</html>
